@@ -1,0 +1,506 @@
+@media only screen and (max-width: 600px) {
+  /* Mobile Core */
+  img {
+    max-width: 100%;
+  }
+  body {
+    background-color: #333;
+  }
+  /* Header */
+  .logo {
+    width: 100px;
+    margin-left: 5px;
+  }
+  #navbar {
+    background-color: lightgray;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+  }
+  .nav-links a {
+    text-decoration: none;
+    list-style: none;
+    color: #333;
+  }
+  .mobile-title {
+    color: #333;
+    margin-top: 2em;
+    font-size: 1.5em;
+    font-family: 'Roboto', sans-serif;
+  }
+  /* Hamburger */
+  .toggle-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    margin-top: 3em;
+    margin-right: 20px;
+  }
+  .toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #333;
+    border-radius: 10px;
+  }
+  .nav-links {
+    display: none;
+  }
+  /* Hamburger */
+  .toggle-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    margin-top: 3em;
+    margin-right: 20px;
+  }
+  .toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #333;
+    border-radius: 10px;
+  }
+  .nav-links {
+    display: none;
+  }
+  /* Section A Index*/
+  .section-a {
+    min-height: 300px;
+    border-bottom: 3px solid black;
+  }
+  .content-text h2 {
+    text-align: center;
+    font-size: 2em;
+    padding-top: 1em;
+    font-family: 'Roboto', sans-serif;
+    margin: 15px;
+    color: #f1f2f3;
+    text-shadow: 2px 2px #0a0909;
+    letter-spacing: 2px;
+  }
+  .section-a .bg-section-a {
+    position: absolute;
+    background: url('../images/black_white-storefront.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    z-index: -1;
+    opacity: 0.9;
+  }
+  .content-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .btn {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    background: transparent;
+    padding: 0.5em 1em;
+    background: black;
+    border: 2px solid #f1f2f3;
+    border-radius: 5px;
+    margin-top: 100px ;
+    color: #f1f2f3;
+    letter-spacing: 2px;
+  }
+  .btn:hover {
+    background: #7e8081;
+    color: #f1f2f3;
+  }
+  /* Section A Artist Names */
+  .full-list {
+    margin: 50px;
+  }
+  .full-list ul {
+    columns: 2;
+    column-gap: 1em;
+  }
+  .full-list li {
+    margin-top: 2px;
+  }
+  .full-list li a {
+    text-decoration: none;
+    color: #333;
+  }
+  /* Section B */
+  .section-b {
+    margin: 10px;
+    background: white;
+  }
+  .section-b h2 {
+    padding-top: 15px;
+    font-size: 2em;
+    text-align: center;
+  }
+  .section-b p {
+    margin: 10px;
+    padding-bottom: 30px ;
+    font-size: 1.2em;
+    margin-top: 3px;
+  }
+  .featured-artist-prints {
+    min-height: 400px;
+  }
+  .featured-artist-prints .figcap-1,
+  .featured-artist-prints .figcap-2 {
+    margin: 3px;
+    text-align: center;
+    padding-bottom: 5px;
+  }
+  .print-1,
+  print-2 {
+    width: 100%;
+  }
+  .print-2 {
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+  /* make the pictures actually stay in the middle */
+  .print-1,
+  .print-2 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  footer {
+    background: lightgray;
+  }
+  .footer-text {
+    text-align: center;
+    color: black;
+    padding: 20px;
+  }
+}
+/* Tablet View */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .toggle-button {
+    display: none;
+  }
+  .mobile-title {
+    display: none;
+  }
+  .logo {
+    width: 150px;
+    margin-left: 15px;
+    margin-bottom: 1px;
+  }
+  #navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+    background: lightgray;
+  }
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-links a {
+    text-decoration: none;
+    list-style: none;
+    color: #333;
+    font-size: 2em;
+    font-family: 'IM Fell DW Pica', serif;
+  }
+  .mobile-title {
+    color: #333;
+    margin-top: 2em;
+    font-size: 1.5em;
+  }
+  .nav-links li {
+    margin-right: 45px;
+  }
+  /* Section A */
+  .section-a {
+    min-height: 300px;
+    border-bottom: 3px solid black;
+  }
+  .content-text h2 {
+    text-align: center;
+    font-size: 2em;
+    padding-top: 1em;
+    font-family: 'Roboto', sans-serif;
+    margin: 15px;
+    color: #f1f2f3;
+    text-shadow: 2px 2px #0a0909;
+    letter-spacing: 2px;
+  }
+  .section-a .bg-section-a {
+    position: absolute;
+    background: url('../images/black_white-storefront.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    z-index: -1;
+    opacity: 0.9;
+  }
+  .content-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .btn {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    background: transparent;
+    padding: 0.5em 1em;
+    background: black;
+    border: 2px solid #f1f2f3;
+    border-radius: 5px;
+    margin-top: 100px ;
+    color: #f1f2f3;
+    letter-spacing: 2px;
+  }
+  .btn:hover {
+    background: #7e8081;
+    color: #f1f2f3;
+  }
+  /* Section B */
+  .section-b {
+    background: #333;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-auto-rows: minmax(200px, auto);
+  }
+  .featured-artist {
+    border-radius: 10px;
+    background: #f1f2f3;
+    margin: 15px;
+  }
+  .featured-artist h2 {
+    font-size: 2em;
+    text-align: center;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .featured-artist p {
+    font-size: 1.5em;
+    padding-top: 50px;
+    margin: 10px;
+  }
+  .featured-artist-prints {
+    background: #333;
+  }
+  .prints {
+    margin: 15px;
+    background: #f1f2f3;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 1em;
+    padding-top: 30px;
+    border-left: 2px solid black;
+    border-radius: 10px;
+  }
+  .print-1 {
+    grid-column-start: 1;
+    grid-column-end: 2 ;
+    margin-left: 5px;
+    text-align: center;
+  }
+  .print-2 {
+    grid-column-start: 2;
+    grid-column-end: 3 ;
+    grid-row-start: 1 ;
+    grid-row-end: 2;
+    margin-top: 100px;
+    margin-right: 5px;
+    text-align: center;
+  }
+  .figcap-1 {
+    grid-column-start: 1;
+    grid-column-end: 2 ;
+  }
+  .figcap-1,
+  .figcap-2 {
+    text-align: center;
+    padding: 5px;
+  }
+  footer {
+    height: 70px;
+    background: lightgray;
+  }
+  footer .footer-text {
+    text-align: center;
+    padding-top: 20px;
+  }
+}
+/* Desktop View */
+@media (min-width: 1025px) {
+  /* Nav Bar */
+  .toggle-button {
+    display: none;
+  }
+  .mobile-title {
+    display: none;
+  }
+  .logo {
+    width: 150px;
+    margin-left: 15px;
+    margin-bottom: 1px;
+  }
+  #navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+    background: lightgray;
+  }
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-links a {
+    text-decoration: none;
+    list-style: none;
+    color: #333;
+    font-size: 2em;
+    font-family: 'IM Fell DW Pica', serif;
+  }
+  .mobile-title {
+    color: #333;
+    margin-top: 2em;
+    font-size: 1.5em;
+  }
+  .nav-links li {
+    margin-right: 45px;
+  }
+  /* Section A */
+  .section-a {
+    min-height: 300px;
+    border-bottom: 3px solid black;
+  }
+  .content-text h2 {
+    text-align: center;
+    font-size: 2em;
+    padding-top: 1em;
+    font-family: 'Roboto', sans-serif;
+    margin: 15px;
+    color: #f1f2f3;
+    text-shadow: 2px 2px #0a0909;
+    letter-spacing: 2px;
+  }
+  .section-a .bg-section-a {
+    position: absolute;
+    background: url('../images/black_white-storefront.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    z-index: -1;
+    opacity: 0.9;
+  }
+  .content-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .btn {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    background: transparent;
+    padding: 0.5em 1em;
+    background: black;
+    border: 2px solid #f1f2f3;
+    border-radius: 5px;
+    margin-top: 100px ;
+    color: #f1f2f3;
+    letter-spacing: 2px;
+  }
+  .btn:hover {
+    background: #7e8081;
+    color: #f1f2f3;
+  }
+  /* Section B */
+  .section-b {
+    background: #333;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-auto-rows: minmax(200px, auto);
+  }
+  .featured-artist {
+    border-radius: 10px;
+    background: #f1f2f3;
+    margin: 15px;
+  }
+  .featured-artist h2 {
+    font-size: 2em;
+    text-align: center;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .featured-artist p {
+    font-size: 1.5em;
+    padding-top: 50px;
+    margin: 10px;
+  }
+  .featured-artist-prints {
+    background: #333;
+  }
+  .prints {
+    margin: 15px;
+    background: #f1f2f3;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 1em;
+    padding-top: 30px;
+    border-left: 2px solid black;
+    border-radius: 10px;
+  }
+  .print-1 {
+    grid-column-start: 1;
+    grid-column-end: 2 ;
+    text-align: center;
+  }
+  .print-1 img {
+    max-width: 100%;
+  }
+  .print-2 {
+    grid-column-start: 2;
+    grid-column-end: 3 ;
+    grid-row-start: 1 ;
+    grid-row-end: 2;
+    margin-top: 100px;
+    margin-right: 50px;
+    text-align: center;
+  }
+  .print-2 img {
+    max-width: 100%;
+  }
+  .figcap-1 {
+    grid-column-start: 1;
+    grid-column-end: 2 ;
+  }
+  .figcap-1,
+  .figcap-2 {
+    text-align: center;
+    padding: 5px;
+  }
+  footer {
+    height: 70px;
+    background: lightgray;
+  }
+  footer .footer-text {
+    text-align: center;
+    padding-top: 20px;
+  }
+}
