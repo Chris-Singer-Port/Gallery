@@ -1,0 +1,99 @@
+@import "style.css";
+@media only screen and (max-width:600px){
+    /* Section A */
+    .mission-statement .bg-about-image{
+    position: absolute;
+    background: url('../images/florence.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 250px;
+    z-index: -1;
+    filter: brightness(50%);
+    }
+    .mission-statement-text {
+        color: white;
+        height: 250px;
+        h1 {
+            text-align: center;
+            padding-top: 10px;
+            font-size: 2em;
+        }
+        h2{
+            text-align: center;
+            padding-top: 20px;
+            padding-left: 10px;
+            padding-right: 10px ;
+            font-size: 1.2em;
+        }
+    }
+    /* Section B */
+    .section-b {
+        border-bottom: 1px solid black;
+        border-top: 1px solid black;
+        margin: 0px;
+        h1{
+            padding-top: 10px;
+            text-align: center;
+            font-size: 2em;
+        }
+        h2 {
+            padding: 10px;
+            text-align: center;
+            font-size: 1.2em;
+        }
+    }
+}
+@media only screen and (min-width:601px){
+    /* Desktop & Tablet */
+     /* Section A */
+     .mission-statement .bg-about-image{
+        position: absolute;
+        background: url('../images/florence.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 300px;
+        z-index: -1;
+        filter: brightness(50%);
+       
+        }
+        .mission-statement-text {
+            color: white;
+            height: 300px;
+            h1 {
+                text-align: center;
+                padding-top: 30px;
+                font-size: 2em;
+            }
+            h2{
+                text-align: center;
+                padding-top: 40px;
+                padding-left: 10px;
+                padding-right: 10px ;
+                font-size: 1.2em;
+            }
+        }
+        /* Section B */
+        
+        .section-b {
+            height: 150px;
+            display: inline-block;
+            background-color: white;
+            border-bottom: 1px solid black;
+            border-top: 1px solid black;
+            margin: 0px;
+            h1{
+                padding-top: 20px;
+                text-align: center;
+                font-size: 2em;
+            }
+            h2 {
+                padding: 10px;
+                text-align: center;
+                font-size: 1.2em;
+            }
+        }
+    }

@@ -1,0 +1,194 @@
+
+@media only screen and (max-width:600px){
+    /* Mobile Core */
+    img{
+        max-width: 100%;
+
+    }
+    body {
+        background-color: #333;
+    }
+
+    /* Header */
+
+    .logo {
+    max-width: 100px;
+    max-height: 100px;
+    margin-left: 5px;
+    }
+    #navbar{
+    background-color:lightgray;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+  
+    }
+    .nav-links a {
+    text-decoration: none;
+    list-style: none;
+    color: #333;
+    }
+
+    .mobile-title {
+    color: #333;
+    margin-top: 2em;
+    font-size: 1.5em;
+    font-family: 'Roboto', sans-serif;
+    }
+
+    /* Hamburger */
+    .toggle-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: 
+    space-between;
+    width: 30px;
+    height: 21px;
+    margin-top: 3em;
+    margin-right: 20px;
+    }
+
+    .toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #333;
+    border-radius: 10px;
+    }
+
+    .nav-links {
+    display: none;
+    }
+    /* Hamburger */
+    .toggle-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: 
+    space-between;
+    width: 30px;
+    height: 21px;
+    margin-top: 3em;
+    margin-right: 20px;
+    }
+
+    .toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: #333;
+    border-radius: 10px;
+    }
+
+    .nav-links {
+    display: none;
+    }
+    /* Section A Index*/
+
+    .section-a{
+        min-height: 300px;
+        border-bottom: 3px solid black;
+        
+    }
+    .content-text h2 {
+        text-align: center;
+        font-size: 2em;
+        padding-top: 1em;
+        font-family: 'Roboto', sans-serif;
+        margin: 15px;
+        color: #f1f2f3;
+        text-shadow: 2px 2px #0a0909;
+        letter-spacing: 2px;
+        
+    }
+    .section-a .bg-section-a {
+        position: absolute;
+        background: url('../images/black_white-storefront.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 300px;
+        z-index: -1;
+        opacity: .9;
+        
+    }
+    .content-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .btn {
+        color: white;
+        text-decoration: none;
+        font-size: 1.5em;
+        background: transparent;
+        padding: .5em 1em;
+        background: black;
+        border: 2px solid #f1f2f3;
+        border-radius: 5px; 
+        margin-top: 100px ; 
+        color: #f1f2f3;
+        letter-spacing: 2px; 
+    }
+    .btn:hover{
+        background: #7e8081;
+        color: #f1f2f3;
+    }
+
+    
+    /* Section B */
+    .section-b {
+        margin: 10px;
+        background: white;
+    }
+    .section-b h2 {
+        padding-top: 15px;
+        font-size: 2em;
+        text-align: center;   
+    }
+    .section-b p{
+        margin: 10px;
+        padding-bottom: 30px ;
+        font-size: 1.2em;
+        margin-top: 3px;
+    }
+    .featured-artist-prints {
+        min-height: 400px;
+        .figcap-1, .figcap-2{
+            margin: 3px;
+            text-align: center;
+            padding-bottom: 5px;
+        }
+    }
+    .print-1, print-2 {
+        width: 100%; 
+    }
+    .print-2 {
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+    .print-1 , .print-2 {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    /* Footer */
+
+    footer{
+        height: minmax(200px, auto);
+        background: lightgray;
+        margin-bottom: 0px;
+    }
+
+    .footer-text{
+        text-align: center;
+        color: black;
+        padding: 20px;
+    }
+    .footer-info {
+        text-align: center;
+        padding-top: 10px;
+        .hours, .location, .contact {
+            padding-top: 10px;
+        } 
+    }
+}

@@ -1,4 +1,198 @@
 @import "style.css";
-#navbar{
-    background: red;
+/* Mobile View */
+@media only screen and (max-width:600px){
+    /* Section A */
+    #main{
+        border-bottom: 2px solid black;
+    }
+
+    #artist-main .bg-about-image{
+        position: absolute;
+        background: url('../images/florence.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: min(200px, auto);
+        z-index: -1;
+        filter: brightness(50%);
+    }
+    body {
+        background:lightgray;
+    }
+    #artist-main {
+        height: min(200px, auto);
+        border-bottom: 2px solid black;
+    }
+    .title{
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 4px;
+        color: white;
+        
+        
+    }
+    .full-list {
+        height: min(200px, auto);
+        margin: 0px;
+        
+        columns: 2;
+        text-align: center;
+        padding-top: 40px;
+        
+    
+    }
+    .full-list li a {
+        list-style: none;
+        text-decoration: none;
+        color: white;
+       
+    }
+    /* Section B Images*/
+    /* .full-gallery{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    } */
+   
+        
+    
+    .img-1,
+     .img-2,
+     .img-3,
+     .img-4{
+         object-fit: cover;
+         max-width: 100%;
+        
+     }
+     .figcap-art{
+         text-align:center;
+         padding-top: 4px;
+         padding-bottom: 4px;
+         border: 1px solid black; 
+     }
+
+     .artist-info {
+         background: white;
+         text-align: center;
+         padding: 5px;
+         border-bottom: 2px solid black;
+     }
+
 }
+@media only screen and (min-width:1024px){
+    #main{
+        border-bottom: 2px solid black;
+        padding-bottom: 30px;
+    }
+
+    #artist-main .bg-about-image{
+        position: absolute;
+        background: url('../images/florence.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: min(300px, auto);
+        z-index: -1;
+        filter: brightness(50%);
+    }
+    body {
+        background:lightgray;
+    }
+    #artist-main {
+        height: min(300px, auto);
+        border-bottom: 2px solid black;
+    }
+    .title{
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 4px;
+        color: white;
+        font-size: 1.7em;
+        
+        
+    }
+    .full-list {
+        height: min(200px, auto);
+        margin: 0px;
+        columns: 2;
+        text-align: center;
+        padding-top: 40px;
+        
+    
+    }
+    .full-list li a {
+        list-style: none;
+        text-decoration: none;
+        color: white;
+        font-size: 1.3em;
+       
+    }
+    /* Section B 
+    .section-b {
+        display: grid;
+        grid-template-columns: 2fr;
+        grid-template-rows: auto;
+
+        img{
+            width:500px
+        }
+        .img-1 {
+            grid-column-start:1;
+            grid-column-end: 2;
+            max-width: 100%;
+        }
+        .img-2{
+            grid-column-start: 2;
+            grid-column-end: 3;
+            max-width: 100%;
+        }
+    }*/
+    .section-b{
+        background: lightgray;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        img{
+            width: 600px;
+            height: 300px;  
+            border-radius: 10px;
+        }
+        .img-1,
+        .img-4,
+        .img-3,
+        .img-2{
+            
+            margin-bottom: 20px;
+        }
+        .figcap-art{
+            padding: 4px;
+            border-radius: 10px;
+            background: darkgrey;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        
+        .full-gallery{
+        padding-top: 40px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+
+        }
+    }
+
+    .artist-info {
+        background: white;
+        text-align: center;
+        padding: 5px;
+        border-bottom: 2px solid black;
+    }
+}
+
