@@ -1,0 +1,211 @@
+@import "style.css";
+/* Mobile View */
+@media only screen and (max-width:600px){
+    .navbar-links li a.active{
+        background-color: #333;
+        color: white;
+           
+    }
+    /* Section A */
+    #main{
+        border-bottom: 2px solid black;
+    }
+
+    #artist-main .bg-about-image{
+        position: absolute;
+        background: url('../images/florence.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: min(200px, auto);
+        z-index: -1;
+        filter: brightness(50%);
+    }
+    body {
+        background:lightgray;
+    }
+    #artist-main {
+        height: min(200px, auto);
+        border-bottom: 2px solid black;
+    }
+    .title {
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 4px;
+        color: white;
+        a {
+            color:white;
+            text-decoration: none;
+        }
+        
+        
+        
+    }
+    .full-list {
+        height: min(200px, auto);
+        margin: 0px;
+        
+        columns: 2;
+        text-align: center;
+        padding-top: 40px;
+        
+    
+    }
+    .full-list li a {
+        list-style: none;
+        text-decoration: none;
+        color: white;
+       
+       
+    }
+    /* Section B Images*/
+    /* .full-gallery{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    } */
+   
+        
+    
+    .img-1,
+     .img-2,
+     .img-3,
+     .img-4{
+         object-fit: cover;
+         max-width: 100%;
+        
+     }
+     .figcap-art{
+         text-align:center;
+         padding-top: 4px;
+         padding-bottom: 4px;
+         border: 1px solid black; 
+     }
+
+     .artist-info {
+         background: white;
+         text-align: center;
+         padding: 5px;
+         border-bottom: 2px solid black;
+     }
+
+}
+@media only screen and (min-width:601px){
+    .active{
+        background-color: #333;
+        
+    }
+    .navbar-links li a.active{
+        background-color: #333;
+        color: white;
+           
+    }
+    .active-artist {
+        background-color: rgb(0, 0, 0);
+        padding-left: 100px;
+        padding-right: 100px;
+        
+    }
+    
+    #main{
+        border-bottom: 2px solid black;
+        padding-bottom: 30px;
+    }
+
+    #artist-main .bg-about-image{
+        position: absolute;
+        background: url('../images/florence.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: min(300px, auto);
+        z-index: -1;
+        filter: brightness(50%);
+    }
+    body {
+        background:lightgray;
+    }
+    #artist-main {
+        height: min(300px, auto);
+        border-bottom: 2px solid black;
+    }
+    .title{
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 4px;
+        color: white;
+        font-size: 2em;
+        a {
+            color:white;
+            text-decoration: none;
+        }
+        
+        
+    }
+    
+    .full-list {
+        height: min(200px, auto);
+        margin: 0px;
+        columns: 2;
+        text-align: center;
+        padding-top: 40px;
+        
+    
+    }
+    .full-list li a {
+        list-style: none;
+        text-decoration: none;
+        color: white;
+        font-size: 1.2em;
+       
+    }
+   
+    .section-b{
+        background: lightgray;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        img{
+            width: 600px;
+            height: 300px;  
+            border-radius: 10px;
+        }
+        .img-1,
+        .img-4,
+        .img-3,
+        .img-2{
+            
+            margin-bottom: 20px;
+        }
+        .figcap-art{
+            padding: 4px;
+            border-radius: 10px;
+            background: darkgrey;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        
+        .full-gallery{
+        padding-top: 40px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+
+        }
+    }
+
+    .artist-info {
+        background: white;
+        text-align: center;
+        padding: 5px;
+        border-bottom: 2px solid black;
+    }
+}
+

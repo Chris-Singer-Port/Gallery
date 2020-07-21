@@ -1,39 +1,55 @@
-/* Mobile Css */
-@import "corestyle.css";
-/* Desktop View */
-@media (min-width: 601px) {
+@media (max-width: 600px) {
   .navbar-links li a.active {
     background-color: #333;
     color: white;
   }
-  /* Nav Bar */
+  /* Mobile Core */
+  img {
+    max-width: 100%;
+  }
+  body {
+    background-color: #333;
+  }
+  /* Header */
+  .toggle-button {
+    display: flex;
+  }
+  .navbar-links {
+    display: none;
+    /* change back to none afterwards */
+    width: 100%;
+  }
   .navbar {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     color: white;
     background-color: lightgray;
-    height: 75px;
   }
   .navbar-links ul {
     margin: 0px;
     padding: 0px;
     display: flex;
-    margin-right: 10px;
+    flex-direction: column;
+    width: 100%;
   }
   .navbar-links li {
     list-style: none;
+    text-align: center;
   }
   .navbar-links li a {
     text-decoration: none;
     color: black;
-    padding: 1rem;
+    padding: 0.5rem 1rem;
     display: block;
-    font-size: 1.5em;
     font-family: 'IM Fell DW Pica', serif;
   }
+  .navbar-links.active {
+    display: flex;
+  }
   .navbar-links li:hover {
-    background-color: #46494b;
+    background-color: darkgrey;
   }
   .navbar-links li:hover a {
     color: white;
@@ -44,16 +60,14 @@
   }
   .brand-title a {
     text-decoration: none;
+    list-style: none;
     color: black;
-    padding: 0.5rem 1rem;
-    display: block;
-    font-family: 'IM Fell DW Pica', serif;
   }
   .toggle-button {
     position: absolute;
     top: 0.75rem;
     right: 1rem;
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 30px;
@@ -62,13 +76,34 @@
   .toggle-button .bar {
     height: 3px;
     width: 100%;
-    background-color: white;
+    background-color: black;
     border-radius: 10px;
   }
-  /* Section A */
+  /* Section A Index*/
   .section-a {
     min-height: 300px;
     border-bottom: 3px solid black;
+  }
+  /* ====================
+        Contact Form 
+
+    =======================*/
+  .address {
+    height: 200px;
+    background: white;
+    min-height: 300px;
+    border-bottom: 3px solid black;
+  }
+  .address h1 {
+    margin-left: 50px;
+    padding-top: 30px;
+  }
+  .address .contact-text {
+    font-weight: 900;
+    font-size: 2em;
+  }
+  .contact-form {
+    padding: 10px;
   }
   .content-text h2 {
     text-align: center;
@@ -115,78 +150,65 @@
   }
   /* Section B */
   .section-b {
-    background: #333;
-    display: grid;
-    grid-template-columns: 40% 60%;
-    grid-auto-rows: minmax(200px, auto);
+    margin: 10px;
+    background: white;
   }
-  .featured-artist {
-    border-radius: 10px;
-    background: #f1f2f3;
-    margin: 15px;
-  }
-  .featured-artist h2 {
+  .section-b h2 {
+    padding-top: 15px;
     font-size: 2em;
     text-align: center;
-    margin-top: 15px;
-    margin-left: 15px;
-    margin-right: 15px;
   }
-  .featured-artist p {
-    font-size: 1.5em;
-    padding-top: 50px;
+  .section-b p {
     margin: 10px;
+    padding-bottom: 30px ;
+    font-size: 1.2em;
+    margin-top: 3px;
   }
   .featured-artist-prints {
-    background: lightgray;
-    margin: 15px;
-    padding: 15px;
-    border-radius: 10px;
+    min-height: 400px;
   }
-  .featured-artist-prints .image-2 {
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 10px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
+  .featured-artist-prints .figcap-1,
   .featured-artist-prints .figcap-2 {
-    padding-top: 5px;
+    margin: 3px;
     text-align: center;
+    padding-bottom: 5px;
   }
+  .print-1,
+  print-2 {
+    width: 100%;
+  }
+  .print-2 {
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+  .print-1,
+  .print-2 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  /* Footer */
   footer {
-    height: 200px;
+    height: minmax(200px, auto);
     background: lightgray;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
-  footer .footer-info {
-    font-size: 1.2em;
-    padding-top: 40px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+  .footer-text {
+    padding-top: 15px;
+    padding-bottom: 10px;
     text-align: center;
-  }
-  footer .footer-text {
-    text-align: center;
-    padding-top: 20px;
-    font-size: 1.2em;
-  }
-  footer .phone,
-  footer .email {
     color: black;
-    text-decoration: none;
   }
-  /*=============
-    Contact Page 
-    ==============*/
-  .address {
-    padding-top: 50px;
-    padding-left: 50px;
+  .footer-info {
+    text-align: center;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
-  .contact-text {
-    padding-top: 50px;
-    font-weight: 900;
-    font-size: 2em;
+  .footer-info .hours,
+  .footer-info .location,
+  .footer-info .contact {
+    padding-top: 10px;
   }
 }
