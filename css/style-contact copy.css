@@ -1,0 +1,143 @@
+    @import "corestyle.css";
+    @media (max-width:849px) {
+        #main-about {
+            background-color: #333;
+        }
+        body {
+            background-color: #333;
+        }
+        .address-contact {
+            background: white;
+        }
+        .contact-flex {
+            margin: 10px;
+        }
+        .contact-text-page {
+            text-align: center;
+            font-size: 2em;
+            font-weight: 800;
+            padding-top: 20px;
+        }
+        .contact-info-phone,
+        .contact-info-email,
+        .contact-info-map {
+            background: white;
+            padding: 40px;
+            color: black;
+            text-align: center;
+        }
+        .email-contact,
+        .phone-contact {
+            padding-top: 20px;
+        }
+        .email-contact a,
+        .phone-contact a {
+            text-align: center;
+            color: black;
+            text-decoration: none;
+        }
+        .email-contact a:hover,
+        .phone-contact a:hover {
+            background-color: darkgrey;
+            color: black;
+        }
+    }
+    
+    @media (min-width:850px) and (max-width:1000px) {
+        .contact-text-page {
+            text-align: center;
+            font-size: 2em;
+            font-weight: 800;
+            padding-top: 50px;
+        }
+        .contact-flex {
+            padding: 30px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+        .contact-info-phone,
+        .contact-info-email,
+        .contact-info-map {
+            max-width: 300px;
+            background: rgb(151, 154, 156);
+            padding: 40px;
+            color: white;
+            box-shadow: 10px 10px grey;
+        }
+        iframe {
+            max-width: 300px;
+        }
+        .address-contact {
+            text-align: center;
+        }
+        .email-contact,
+        .phone-contact {
+            padding-top: 30px;
+            text-align: center;
+        }
+        .email-contact a,
+        .phone-contact a {
+            text-align: center;
+            color: white;
+            text-decoration: none;
+        }
+        .email-contact a:hover,
+        .phone-contact a:hover {
+            background-color: darkgrey;
+            color: black;
+        }
+    }
+    
+    @media (min-width:1001px) {
+        #main-about {
+            background-color: #333;
+            height: 600px;
+        }
+        .contact-text-page {
+            padding-bottom: 10px;
+            background-color: white;
+            text-align: center;
+            font-size: 2em;
+            font-weight: 800;
+            padding-top: 50px;
+        }
+        .contact-flex {
+            height: 400px;
+            background-color: white;
+            margin: 10px;
+            padding: 30px;
+            margin-bottom: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+        .contact-info-phone,
+        .contact-info-email,
+        .contact-info-map {
+            min-width: (500px, auto);
+            background: rgb(151, 154, 156);
+            padding: 40px;
+            color: white;
+            box-shadow: 10px 10px grey;
+        }
+        .address-contact {
+            text-align: center;
+        }
+        .email-contact,
+        .phone-contact {
+            padding-top: 30px;
+            text-align: center;
+        }
+        .email-contact a,
+        .phone-contact a {
+            text-align: center;
+            color: white;
+            text-decoration: none;
+        }
+        .email-contact a:hover,
+        .phone-contact a:hover {
+            background-color: darkgrey;
+            color: black;
+        }
+    }
