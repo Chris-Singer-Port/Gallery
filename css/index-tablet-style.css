@@ -1,0 +1,17 @@
+/* Mobile Css */
+@import "corestyle.css";
+@import "style.css";
+@media (min-width: 601px) and (max-width: 1023px) {
+  .brand-title {
+    font-size: 1.2em;
+  }
+  .navbar-links li a {
+    font-size: 1em;
+  }
+  .image-2 {
+    margin-top: 75px;
+  }
+  .featured-artist p {
+    font-size: 1em;
+  }
+}
